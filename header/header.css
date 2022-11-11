@@ -6,7 +6,6 @@ header {
     box-sizing: border-box;
     display: block;
     margin: 0 auto;
-    max-width: 1600px;
     width: 100%;
     height: 56px;
     background-color: var(--header-color);
@@ -24,6 +23,7 @@ header {
 
 .header-search-block{
     width: 85.5%;
+
     height: 40px; 
     display: flex;
     background-color: transparent;    
@@ -66,6 +66,7 @@ header {
     border: none;
     cursor: pointer;  
     background-color: var(--global-green);
+    display: block;
 }
 
 .header-button-menu p {
@@ -84,10 +85,13 @@ header {
 .header__card-shopping {
     display: flex;
     align-items: center;
-    cursor: pointer;   
+    cursor: pointer; 
+    top: 0px;
+    left: 0px; 
     position: relative;
-    height: 40px;
+    max-height: 40px;
     width: 40px; 
+    margin: 0 auto;
 }
 
 .header__card-shopping_img {    
@@ -95,16 +99,68 @@ header {
     width: 35px;
     height: 35px;
     top: 0px;
-    left: -14px; 
+    left: -10px; 
 }
  
 .shoppingCounter {
     position: absolute;
     top: -24px;
-    left: 24px;
+    left: 30px;
     color: #fff;
     font-size: 15px;
- }
+}
+
+ @media (max-width: 700px) {
+    .header-button-menu {
+        display: none;
+    }
+     
+    .header-right-side {
+        width: 100%;
+    }
+
+    .header-search-block{
+        width: 300px;
+    }
+
+    .products-container {
+		width: 92% !important;
+		margin: var(--spacing-large) auto;		
+		/* display: flex;
+		flex-direction: column; */
+	}
+}
+
+@media (max-width: 412px) {
+    .header-container {
+        width: 310px !important;
+    }
+    .header-search-block{
+        width: 180px !important;
+    }
+    .products-container {
+		width: 310px !important;
+		margin: var(--spacing-large) auto;		
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 350px) { 
+    .header-container {
+        width: 250px !important;
+    }
+    .header-search-block{
+        width: 160px !important;
+    }
+    .products-container {
+		width: 250px !important;
+		margin: var(--spacing-large) auto;		
+		display: flex;
+		flex-direction: column;
+	}
+
+}
 
 
 

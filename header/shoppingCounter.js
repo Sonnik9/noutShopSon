@@ -1,6 +1,7 @@
 class ShoppingCounter {
     constructor() {
         this.div3 = document.createElement('div');
+        this.div3.className = 'header__card-shopping2';
     }
     handlerOpenShoppingPage() {
         shoppingPage.render();
