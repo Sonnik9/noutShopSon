@@ -32,8 +32,8 @@ table {
 	right: 20px;
 	width: 35px;
 	height: 35px;
-	background: url('/header/headerImg/icons8-удалить-50.png');
-	background-color: transparent;
+	background-image: url('../headerImg/icons8-удалить-50.png');
+	/* background-color: none; */
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: contain;
