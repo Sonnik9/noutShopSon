@@ -1,0 +1,41 @@
+.shopping-container {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 87%;
+	height: 70vh;
+	z-index: 2000;
+	margin: auto;
+	padding: 20px;
+	transform: translate(-50%, -50%);
+	background-color: var(--color-white);
+	box-shadow: var(--box-shadow);
+	overflow-y: scroll;
+}
+table {
+	max-width: 100%;
+}
+.shopping-element__name {
+	padding: var(--spacing-medium);
+	font-weight: bold;
+	width: 100%;
+}
+.shopping-element__price {
+	min-width: 108px;
+	padding: 30px 50px;
+	color: var(--color-unaccent);
+}
+.shopping-close {
+	position: absolute;
+	z-index: 300000;
+	top: 20px;
+	right: 20px;
+	width: 35px;
+	height: 35px;
+	background: url('/header/headerImg/icons8-удалить-50.png');
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+	cursor: pointer;
+}

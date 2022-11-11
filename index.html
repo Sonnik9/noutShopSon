@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INETSHOP</title> 
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+   
+    <link rel="stylesheet" href="global/global.css">
+    <script defer src="global/constants.js"></script> 
+    <script defer src="utils/localStorage/localStr.js"></script>
+    
+    <script defer src="header/menu.js"></script>
+    
+    <script defer src="./header/shoppingCounter.js"></script>
+    <link rel="stylesheet" href="header/header.css">   
+    <script defer src="/header/header.js"></script>
+     
+    <link rel="stylesheet" href="main/products/products.css">
+    <script defer src="main/products/products.js"></script>
+    <script defer src="header/searching.js"></script>
+    <link rel="stylesheet" href="header/shopping/shopping.css"> 
+    <script defer src="header/shopping/shopping.js"></script>   
+    
+    <link rel="stylesheet" href="main/main.css">
+    <script defer src="main/main.js"></script>    
+    
+    <link rel="stylesheet" href="footer/footer.css">
+    <script defer src="footer/footer.js"></script>
+    <script defer src="global/global.js"></script> 
+    <script defer src="test.js"></script>   
+   
+</head>
+<body> 
+    <header>
+        <div id="header" class="header-container">
+            <button class="header-button-menu">
+                <p></p>
+                <p></p>
+                <p></p>
+                
+            </button>
+            <div id="header-right-side" class="header-right-side">
+                <div class="header-search-block">
+                    <input id="header-search__form-input" class="header-search__form-input" oninput="searchInput.renderProoducts()" placeholder="Я ищу..." autocomplete="off" type="text">
+                    <!--  <button id="header-search__btn" class="header-search__btn"> -->
+                       <!-- Найти -->
+                    <!-- </button> -->
+                <img class="header-search__img" src="header/headerImg/icons8-поиск-48.png" alt="">                    
+                </div>               
+            </div>
+
+        </div>
+    </header>
+	<div id="products" class="main-container__products"></div>
+	<div id="shopping"></div>
+	<div id="spinner"></div>
+	<div id="error"></div>
+   
+    <!-- <header>
+        <div id="header-container" class="header-container">          
+    
+        </div>
+
+    </header>
+    
+    <main id="main">
+       
+        <div id="main-container__products" class="main-container__products">
+
+        </div>
+            
+       
+    </main>      
+        
+    <footer>
+        <div id="footer-container" class="footer-container">
+
+        </div>
+    </footer>
+
+    <div id="spinner"></div>
+	<div id="error"></div>
+    
+    
+
+    -->
+    
+</body>
+</html>
